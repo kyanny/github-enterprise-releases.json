@@ -13,10 +13,24 @@ rescue RSS::InvalidRSSError
 end
 
 items = []
+items_alfred = []
 rss.items.each do |item|
   title = item.title
   link = item.link
   items << { title: title, link: link }
+  items_alfred << {
+    title: title,
+    subtitle: title,
+    arg: title,
+    mods: {
+      cmd: {
+        arg: link,
+        subtitle: link,
+      }
+    }
+  }
 end
+alfred = { items: items_alfred }
 
 File.write("releases.json", JSON.pretty_generate(items))
+File.write("alfred.json", alfred.to_json)
