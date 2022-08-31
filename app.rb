@@ -24,8 +24,9 @@ rss.items.each do |item|
     arg: title,
     mods: {
       cmd: {
-        arg: link,
+        title: link,
         subtitle: link,
+        arg: link,
       }
     }
   }
