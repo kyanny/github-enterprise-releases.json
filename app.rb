@@ -20,14 +20,8 @@ rss.items.each do |item|
   items << { title: title, link: link }
   items_alfred << {
     title: title,
-    subtitle: title,
-    arg: title,
-    mods: {
-      cmd: {
-        arg: link,
-        subtitle: link,
-      }
-    }
+    subtitle: link,
+    arg: link,
   }
 end
 alfred = { items: items_alfred }
