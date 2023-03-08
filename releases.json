@@ -1,5 +1,9 @@
 [
   {
+    "title": "3.8.0",
+    "link": "https://enterprise.github.com/releases/3.8.0"
+  },
+  {
     "title": "3.7.7",
     "link": "https://enterprise.github.com/releases/3.7.7"
   },
@@ -30,10 +34,6 @@
   {
     "title": "3.4.16",
     "link": "https://enterprise.github.com/releases/3.4.16"
-  },
-  {
-    "title": "3.8.0",
-    "link": "https://enterprise.github.com/releases/3.8.0"
   },
   {
     "title": "3.7.5",
